@@ -59,7 +59,7 @@ namespace MPTickBar
 
         public bool IsInCombat => this.CheckCondition(new[] { ConditionFlag.InCombat });
 
-        public unsafe bool IsWeaponUnsheathed => (UIState.Instance()->WeaponState.IsUnsheathed == 1);
+        public unsafe bool IsWeaponUnsheathed => (UIState.Instance()->WeaponState.IsUnsheathed == true);
 
         public bool IsInsideInstance => this.CheckCondition(new[] { ConditionFlag.BoundByDuty });
 
